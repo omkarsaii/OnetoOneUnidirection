@@ -16,7 +16,7 @@ public class App
     	person.setName("Venkatesh");
     	person.setAddress("Tirupathi");
     	
-    	pancard.setPanName("ApTp963d");
+    	pancard.setPanName("ApTp963d ");
     	
     	person.setPancard(pancard);
     	persondao.savePerson(person);
