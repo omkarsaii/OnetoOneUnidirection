@@ -32,7 +32,7 @@ public class PersonDao {
 		
 	}
 	
-	public void updateperson(int id,Person person)
+	public void updateperson(int id,Person person )
 	{
 		EntityManager entityManager=getEntityManager();
 		EntityTransaction entityTransaction=entityManager.getTransaction();
