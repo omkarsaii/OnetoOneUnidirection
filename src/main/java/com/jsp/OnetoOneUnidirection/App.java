@@ -13,10 +13,10 @@ public class App
     	Pancard pancard=new Pancard();
     	PersonDao persondao=new PersonDao();
     	
-    	person.setName("Ram");
-    	person.setAddress("Ayodhya");
+    	person.setName("Venkatesh");
+    	person.setAddress("Tirupathi");
     	
-    	pancard.setPanName("UpAy651d");
+    	pancard.setPanName("ApTp963d");
     	
     	person.setPancard(pancard);
     	persondao.savePerson(person);
