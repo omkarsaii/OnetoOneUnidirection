@@ -21,6 +21,10 @@ public class App
     	person.setPancard(pancard);
     	persondao.savePerson(person);
     	
+    	persondao.deletePerson(2);
+    	
+    
+    	
 //    	person.setId(2);
 //    	person.setName("Sita");
 //    	person.setAddress("Ayodhya");
