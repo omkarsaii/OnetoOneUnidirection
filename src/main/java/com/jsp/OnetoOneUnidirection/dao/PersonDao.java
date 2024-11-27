@@ -48,4 +48,23 @@ public class PersonDao {
 		entityTransaction.commit();
 	}
 	
+	public void deletePerson(int id)
+	{
+		EntityManager entityManager=getEntityManager();
+		EntityTransaction entityTransaction=entityManager.getTransaction();
+		
+		Person person=entityManager.find(Person.class,id);
+		
+		if(person!=null)
+		{
+			entityTransaction.begin();
+			entityManager.remove(person);
+			entityTransaction.commit();
+		}
+		else
+		{
+			System.out.println("Person with "+id+" not found");
+		}
+	}
+	
 }
